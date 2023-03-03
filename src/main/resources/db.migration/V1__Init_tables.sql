@@ -1,6 +1,10 @@
+drop table if exists hall, film, film_session;
+
+-- create sequence hibernate_sequence start 2 increment 1;
 
 create table hall (
     h_id int8 primary key not null,
+    name varchar(255),
     seats_num int not null
 );
 
